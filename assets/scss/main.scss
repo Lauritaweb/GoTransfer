@@ -134,6 +134,9 @@ footer{
 
 // responsive
 @media (width <= 992px){
+    header{
+        background-position: top right;
+    }
     .company{
         &>div{
             padding-right: 30px;
@@ -144,6 +147,11 @@ footer{
         }
         #iconoOculto{
             width: 280px!important;
+        }
+    }
+    .servicies{
+        .card{
+            padding: 30px 20px;
         }
     }
     .banner-obelisc{
