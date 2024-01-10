@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Transfer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg menu fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo-go-transfer.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#company">
+                    La empresa
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicies">
+                    servicios
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                    contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- ends nav -->
+    <header>
+        <h1>Go <br>Transfer</h1>
+        <h2>Seguridad, Confort y Seriedad</h2>
+    </header>
+    <!-- ends hero photo -->
+    <main>
+        <section class="bg-main company text-white" id="company">
+            <div class="pt-5 pb-0">
+              <hr class="bg-key">
+              <h3 class="text-center text-key m-3 fs-2">La empresa</h3>
+                <div class="row">
+                    <article class="col-lg-6">
+                        <h3 class="fs-2 mt-5">GO Transfer tu Opción de Confianza para Viajar en Buenos Aires</h3>
+                        <p class="mt-3">Somos tu opción confiable para trasladarte de manera segura y cómoda en Buenos Aires. Con más de una década de experiencia, hacemos que cada viaje sea sin complicaciones y lleno de comodidades.</p>
+                        <p>En Go Transfer, entendemos que cada viaje cuenta una historia, y nos enorgullece ser parte de la tuya. Con más de una década de experiencia, hemos perfeccionado el arte de hacer que cada traslado sea sin complicaciones y lleno de comodidades. 
+                        </p>
+                        <details id="detalles" onclick="toggleDetails()">
+                          <summary id="toggleBtn" class="btn btn-key" onclick="toggleDetails()">
+                              VER MÁS
+                          </summary>
+                          <p class="mt-4">¿Qué nos hace diferentes? No solo somos conductores, somos expertos en hacer que tu viaje sea memorable. Nuestro equipo amable y profesional está dedicado a brindarte un servicio personalizado. Ya sea que necesites llegar a una reunión importante, al aeropuerto o simplemente explorar la ciudad, estamos aquí para hacer que cada kilómetro cuente. En Go Transfer, creemos en la puntualidad, la seguridad y en superar tus expectativas. ¡Viajar con nosotros no es solo llegar a tu destino, es disfrutar del camino! Confía en nosotros para tus traslados, porque en Go Transfer, cada viaje es el inicio de una gran aventura. </p>
+                          <p class="fw-bold">¡Nos vemos en el camino!</p>
+                        </details>                          
+                    </article><!-- ends col 6 -->
+                    <article class="col-lg-6">
+                        <img src="./assets/img/driver.webp" alt="Conductor de Go Transfer" class="mt-5 img-driver">
+                        <img src="./assets/img/icons-company.svg" alt="" id="iconoOculto">
+                    </article>
+                </div><!-- ends row -->
+            </div><!-- ends container -->
+        </section>
+        <section class="servicies" id="servicies">
+          <hr class="bg-main mt-5">
+          <h3 class="text-center text-main m-3 fs-2">Nuestros servicios</h3>
+            <div class="row py-4 container-fluid gy-5 gx-5 justify-content-between mx-auto">
+              <article class="card col-lg-6">
+                <img src="./assets/img/icon-one.svg" alt="" class="d-block mx-auto">
+                <h4 class="fs-5 text-center">Traslados al o desde el Aeropuerto </h4>
+                <a href="#" class="btn btn-main">RESERVAR</a>
+              </article><!-- ends card I -->
+              <article class="card col-lg-6">
+                <img src="./assets/img/icon-two.svg" alt="" class="d-block mx-auto">
+                <h4 class="fs-5 text-center">Traslados Corporativos</h4>
+                <a href="#" class="btn btn-main">RESERVAR</a>
+              </article><!-- ends card II -->
+              <article class="card col-lg-6">
+                <img src="./assets/img/icon-three.svg" alt="" class="d-block mx-auto">
+                <h4 class="fs-5 text-center">Traslados Ejecutivos</h4>
+                <a href="#" class="btn btn-main">RESERVAR</a>
+              </article><!-- ends card III -->
+              <article class="card col-lg-6 ">
+                <img src="./assets/img/icon-four.svg" alt="" class="d-block mx-auto">
+                <h4 class="fs-5 text-center">Premium Access</h4>
+                <a href="#" class="btn btn-main">RESERVAR</a>
+              </article><!-- ends card IV -->
+          </div><!-- ends row -->
+        </section><!-- ends servicies -->
+        <section class="banner-obelisc">
+          <h3 class="fs-1 shadow text-white">Tu opción de confianza para viajar en Buenos Aires</h3>
+        </section><!-- ends banner -->
+        <section class="contact bg-main pb-5" id="contact">
+          <hr class="bg-key mt-5">
+          <h3 class="text-center text-key m-3 fs-2">Contacto</h3>
+          <div class="row container-fluid">
+            <form class="col-sm-12 col-lg-8 mx-auto text-white">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono de contacto</label>
+                <input type="password" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-key">ENVIAR</button>
+            </form>
+          </div><!-- ends row -->
+        </section>
+    </main>
+    <footer>
+      <div class="d-flex">
+        <img src="./assets/img/icon-instagram.svg" alt="">
+        <img src="./assets/img/icon-facebook.svg" alt="">
+      </div>
+      <p class="text-white">Av. San Juan 1354 CABA | +541144265769</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+*{
+    font-family: 'Encode Sans', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+//Vars
+
+// Fonts
+$mainFont:'Encode Sans', sans-serif;
+$secondaryFont:'Encode Sans Condensed', sans-serif;
+
+// Weight
+$bold:600;
+$medium:500;
+$regular:400;
+$thin:300;
+
+//Colors
+$mainColor:#01262D;
+$secondaryColor:#ACBBC2;
+$keyColor:#CFE20E;
+$white:rgb(243, 239, 239);
+$black:rgb(10, 10, 10);
+
+// utilities
+// bgs
+.bg-main{
+    background-color: $mainColor;
+}
+.bg-secondary{
+    background-color: $secondaryColor;
+}
+.bg-key{
+    background-color: $keyColor;
+}
+// btns
+.btn-key{
+    @extend .bg-key;
+    color: $mainColor;
+    font-weight: $medium;
+    border-radius: 0;
+    &:hover{
+        background-color: $secondaryColor;
+        color: $mainColor;
+        border: solis 1px white;
+    }
+}
+.btn-main{
+    @extend .bg-main;
+    color: $keyColor;
+    border-radius: 0;
+    &:hover{
+        border: solid $mainColor 1px;
+    }
+}
+// texts
+.text-main{
+    color: $mainColor;
+}
+.text-key{
+    color: $keyColor;
+}
+// Generales
+h1,
+h2,
+h3{
+    font-family: $secondaryFont;
+    font-weight: $regular;
+}
+p{
+    font-family: $mainFont;
+    font-weight: $regular;
+    line-height: 1.6em;
+    font-size: 1.3em;
+}
+hr{
+    opacity: 1;
+    width: 25%!important;
+    margin: auto;
+    height: 2px;
+}
+.container-fluid{
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+}

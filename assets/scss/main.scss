@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@600;400&family=Encode+Sans:wght@100;400;500&display=swap');
+@import "_base";
+// nav
+.menu{
+    background-color: rgba(0, 0,0,0.8);
+    overflow: visible;
+    img{
+        width: 120px;
+    }
+    a{
+        text-transform: uppercase;
+        color: white;
+        font-size: 1em;
+        font-weight: $medium;
+        &.active{
+            background-color: $keyColor;
+            padding: 4px;
+            text-align: center;
+            color: white;
+        }
+        &:hover{
+            color: $keyColor;
+        }
+    }
+    svg{
+        fill: $keyColor;
+        width: 30px;
+    }
+    button{
+        border: solid $keyColor 1px;
+    }
+}
+// header
+header{
+    background: url(../img/bg-header.webp) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 80px 30px;
+   h1{
+    color: $keyColor;
+    font-size: 3.6em;
+    overflow: hidden;
+   }
+   h2{
+    color: $white;
+    font-size: 1.6em;
+    font-family: $mainFont;
+    font-weight: $thin;
+   }
+}
+// company
+.company{
+    &>div{
+        padding-left: 30px;
+    }
+    img.img-driver{
+        width: 100%;
+        object-fit: cover;
+        transform: translateX(50px);
+    }
+    #iconoOculto {
+        display: none;
+        width: 400px!important;
+        margin: auto;
+        margin-top: 200px;
+    }
+    #detalles[open="true"] #iconoOculto {
+        display: block;
+    }
+    #toggleBtn[aria-expanded="true"]::after {
+        content: " VER MENOS";
+    }
+    #toggleBtn[aria-expanded="false"]::after {
+        content: " VER MÁS";
+    }
+}
+// servicies
+.servicies{
+    h3{
+       font-family: $secondaryFont;
+       font-weight: $medium; 
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 1px $keyColor;
+        width: 49%;
+        padding: 100px 20px;
+        h4{
+            margin-top: 20px;
+        }
+        @media (width <= 992px){
+            width: 100%;
+        }
+    }
+    a.btn-main{
+        margin-top: 50px;
+        display: block;
+        width: 300px;
+    }
+}
+// banner obelisc
+.banner-obelisc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background: url(../img/banner-obelisc.webp) no-repeat center;
+    background-size: cover;
+    h3{
+        font-family: $secondaryFont;
+        font-weight: $medium;
+        text-align: center;
+        overflow: visible;
+    }
+}
+// footer
+footer{
+    background: url(../img/banner-obelisc.webp) bottom left no-repeat;
+    background-size: cover;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: $keyColor 1px solid;
+    img{
+        width: 50px;
+        margin-right: 10px;
+    }
+}
+
+// responsive
+@media (width <= 992px){
+    .company{
+        &>div{
+            padding-right: 30px;
+        }
+        img.img-driver{
+            transform: none;
+            margin-bottom: 30px;
+        }
+    }
+    .banner-obelisc{
+        h3{
+            padding: 0 30px;
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
