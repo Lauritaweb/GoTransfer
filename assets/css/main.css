@@ -76,7 +76,7 @@ hr {
   overflow: visible;
 }
 .menu img {
-  width: 120px;
+  width: 180px;
 }
 .menu a {
   text-transform: uppercase;
@@ -135,7 +135,6 @@ header h2 {
   display: none;
   width: 400px !important;
   margin: auto;
-  margin-top: 200px;
 }
 .company #detalles[open=true] #iconoOculto {
   display: block;
@@ -208,6 +207,9 @@ footer img {
   .company img.img-driver {
     transform: none;
     margin-bottom: 30px;
+  }
+  .company #iconoOculto {
+    width: 280px !important;
   }
   .banner-obelisc h3 {
     padding: 0 30px;

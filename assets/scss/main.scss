@@ -5,7 +5,7 @@
     background-color: rgba(0, 0,0,0.8);
     overflow: visible;
     img{
-        width: 120px;
+        width: 180px;
     }
     a{
         text-transform: uppercase;
@@ -66,7 +66,6 @@ header{
         display: none;
         width: 400px!important;
         margin: auto;
-        margin-top: 200px;
     }
     #detalles[open="true"] #iconoOculto {
         display: block;
@@ -142,6 +141,9 @@ footer{
         img.img-driver{
             transform: none;
             margin-bottom: 30px;
+        }
+        #iconoOculto{
+            width: 280px!important;
         }
     }
     .banner-obelisc{
