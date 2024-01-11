@@ -1,9 +1,4 @@
 node_modules/
-fuentes/
 *.log
 *.logs
 *.map
-*.ai
-*.psd
-*.vscode
-passwords.txt

@@ -200,6 +200,15 @@ footer img {
   margin-right: 10px;
 }
 
+.whatsapp {
+  position: fixed;
+  bottom: 5vh;
+  right: 25px;
+}
+.whatsapp img {
+  width: 90px;
+}
+
 @media (width <= 992px) {
   header {
     background-position: top right;
@@ -225,6 +234,13 @@ footer img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .whatsapp {
+    bottom: 3vh;
+    right: 20px;
+  }
+  .whatsapp img {
+    width: 60px;
   }
 }
 

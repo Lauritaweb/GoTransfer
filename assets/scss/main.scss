@@ -131,7 +131,15 @@ footer{
         margin-right: 10px;
     }
 }
-
+// whatsapp
+.whatsapp{
+    position: fixed;
+    bottom: 5vh;
+    right: 25px;
+    img{
+        width: 90px;
+    }
+}
 // responsive
 @media (width <= 992px){
     header{
@@ -164,5 +172,12 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .whatsapp{
+        bottom: 3vh;
+        right: 20px;
+        img{
+            width: 60px;
+        }
     }
 }
