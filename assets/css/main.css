@@ -211,7 +211,7 @@ footer img {
 
 @media (width <= 992px) {
   header {
-    background-position: top right;
+    background-position: top center;
   }
   .company > div {
     padding-right: 30px;
