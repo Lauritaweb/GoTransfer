@@ -243,5 +243,10 @@ footer img {
     width: 60px;
   }
 }
+@media (width <= 400px) {
+  .servicies a.btn-main {
+    width: 250px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
